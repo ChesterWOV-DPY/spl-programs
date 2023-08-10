@@ -2,56 +2,68 @@ Number Adder, a single-act play; Type in numbers line-by-line to add them all, a
 
 Hamlet, a proud tree, according to Juliet.
 Juliet, a young woman.
-Lady Macbeth, a temporary counter.
-Romeo, another temporary counter.
+Lady Macbeth, a temporary counter, used to store how many values are in Hamlet's stack. 
+Romeo, another temporary counter, used to add up all the numbers.
 Achilles, a good hero, capable of storing the decimal number 10, ASCII character LF (New Line).
 
         Act I: The Play.
     Scene I: Achilles the Hero.
 [Enter Achilles and Hamlet]
 Hamlet: You are an amazing brave bold King! You are as handsome as the sum of yourself and a lovely thing!
+/*
+set Achilles to 2 x 2 x 2 x 1 (8)
+add 2 x 1 (2) to Achilles
+(Achilles is now 10, ASCII character "new line"/"line feed".)
+*/
     Scene II: Juliet's Speech.
 [Exeunt]
 [Enter Hamlet and Juliet]
 Hamlet: Thou art as good as the difference between a beautiful charming fine small blue cute flower and a handsome hero. Speak your mind!
+// set Juliet to 2^6 + 2 (66); print Juliet as char ('>') 
 Juliet: You handsome good fine charming proud tree! Speak YOUR mind!
+// set Hamlet to 2^5 (32); print Hamlet as char (whitespace)
 
     Scene III: Hamlet's Sudden Anger.
 
-Hamlet: THOU ART AS DISGUSTING AS NOTHING!
+Hamlet: THOU ART AS DISGUSTING AS NOTHING! // reset Juliet to 0
 
     Scene IV: Hamlet Talks to A Lot of People.
 [Exeunt]
 [Enter Juliet and Hamlet]
-Juliet: Listen to your heart! 
+Juliet: Listen to your heart! // accept input
 [Exit Juliet]
 [Enter Achilles]
-Hamlet: Speak thy mind!
+Hamlet: Speak thy mind! // print newline
 [Exit Achilles]
 [Enter Lady Macbeth]
-Hamlet: Thou art as good as the sum of thyself and a flower.
+Hamlet: Thou art as good as the sum of thyself and a flower. // add 1 to Macbeth
 [Exit Lady Macbeth]
 [Enter Juliet]
-Juliet: Remember thyself.
-Hamlet: Am I as good as you?
+Juliet: Remember thyself. // put the input given onto Hamlet's stack
+Hamlet: Am I as good as you? // is the input 0?
 Juliet: If not, we must return to Scene II.
+// if not, go back to Scene II; if so, continue to Scene V
 
     Scene V: Hamlet's Memory.
-Hamlet: Is Lady Macbeth better than nothing?
-Juliet: If not, let us proceed to Scene VI.
-Juliet: Recall the advice I gave you!
+Hamlet: Is Lady Macbeth better than nothing? // is Macbeth > 0?
+Juliet: If not, let us proceed to Scene VI. 
+// if not (which means that Macbeth is now 0), go to Scene VI (break out from the loop)
+Juliet: Recall the advice I gave you! // pop the top value from Hamlet's stack, and set Hamlet to it
 [Exit Juliet]
 [Enter Romeo]
-Hamlet: You are as handsome as the sum of thyself and me!
+Hamlet: You are as handsome as the sum of thyself and me! // add Hamlet to Romeo
 [Exit Romeo]
 [Enter Lady Macbeth]
-Hamlet: Thou art as beautiful as the difference between thyself and an angel.
+Hamlet: Thou art as beautiful as the difference between thyself and an angel. // add 1 to Macbeth
 [Exit Lady Macbeth]
 [Enter Juliet]
-Juliet: We shall return to Scene V!
+Juliet: We shall return to Scene V! // go back to Scene V (loop)
 
     Scene VI: A Private Conversation.
 [Exit Hamlet]
 [Enter Romeo]
-Juliet: Open your heart!
+Juliet: Open your heart! // print out the result
+[Exeunt]
+[Enter Hamlet and Achilles]
+Hamlet: Speak thy mind! // print a newline
 [Exeunt]
