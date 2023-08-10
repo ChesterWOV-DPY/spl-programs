@@ -1,6 +1,6 @@
 # SPL Programs (`spl-programs`)
 This is a collection of some programs I wrote myself using the Shakespeare Programming Language (SPL).
-I also wrote some explanations in the directory `explanations`. NOte that they don't actually work because there is no syntax in SPL for comments, sadly.
+I also wrote some explanations in the directory `explanations`. Note that they don't actually work because there is no syntax in SPL for comments, sadly.
 
 To learn more about SPL, see [this](https://web.archive.org/web/20220721085340/http://shakespearelang.sourceforge.net/report/shakespeare/shakespeare.html#SECTION000110000000000000000).
 
